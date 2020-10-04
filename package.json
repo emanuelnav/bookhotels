@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "Primer proyecto con node.js\u001b[D\u001b[\u001b[\u001b[3~\u001b[3~\u001b[C\u001b[Cjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelnav/bootstrap.git"
+  },
+  "author": "Emanuel Navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanuelnav/bootstrap/issues"
+  },
+  "homepage": "https://github.com/emanuelnav/bootstrap#readme"
+}
