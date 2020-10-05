@@ -1,0 +1,22 @@
+.jumbotron {
+    background-color: papayawhip;
+    color: black;
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: papayawhip;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.card-hotel {
+    flex: 1 150px;
+    padding:  2px 5px 2px 5px;
+    margin-top: 10px;
+}
+
+.btn-reservar {
+    width: 100%;
+
+}
