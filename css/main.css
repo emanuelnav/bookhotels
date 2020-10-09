@@ -1,6 +1,7 @@
 .jumbotron {
     background-color: papayawhip;
     color: black;
+    margin-top: 50px;
 }
 
 footer {
@@ -19,4 +20,8 @@ footer {
 .btn-reservar {
     width: 100%;
 
+}
+
+.footer-address-icon {
+    padding-right: 5px;
 }
