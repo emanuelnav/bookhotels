@@ -1,6 +1,7 @@
 .jumbotron {
     background-color: papayawhip;
     color: black;
+    margin-top: 50px;
 }
 
 footer {
@@ -11,12 +12,17 @@ footer {
 }
 
 .card-hotel {
-    flex: 1 150px;
-    padding:  2px 5px 2px 5px;
+    flex: 1 300px;
     margin-top: 10px;
 }
 
 .btn-reservar {
     width: 100%;
+    border-radius: 0%;
 
 }
+
+.footer-address-icon {
+    padding-right: 5px;
+}
+
