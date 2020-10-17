@@ -1,12 +1,12 @@
 .jumbotron {
-    background-color: papayawhip;
+    background-color: powderblue;
     color: black;
     margin-top: 50px;
 }
 
 footer {
     padding: 10px 10px 0 10px;
-    background-color: papayawhip;
+    background-color: powderblue;
     margin-bottom: 0px;
     margin-top: 20px;
 }
@@ -28,4 +28,8 @@ footer {
 
 .faq {
     margin: 20px 0px 20px 0px;
+}
+
+.img-hoteles {
+    height: 250px;
 }
