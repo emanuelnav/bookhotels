@@ -37,6 +37,7 @@
                 <li class="breadcrumb-item active"aria-current="page">Home</li>
             </ol>
         </nav>
+
         <img class="img-fluid" src="images/banner.png" alt="Responsive image">
         <h2>Reserva los mejores hoteles desde la comodidad de tu hogar</h2>
         <hr>
@@ -49,14 +50,10 @@
                     <h5 class="card-subtitle text-muted">Dubai</h5>
                     <p class="card-text">Situado en el Golfo Pérsico, a 17 Km. al sur de Dubai, es uno de los hoteles más lujosos del mundo y 
                         el único hotel de siete estrellas del planeta. También es el más alto y uno de los más caros del planeta.</p>
+                        <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>        
-                    <button class="btn btn-primary btn-reservar" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="reserva">Reservar</button>
-                    <div class="collapse multi-collapse" id="reserva">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </p>
-                    </div>
+                    <button class="btn btn-primary btn-reservar" data-toggle="modal" data-target="#modal-reserva">Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -66,9 +63,10 @@
                     <h5 class="card-subtitle text-muted">Singapur</h5>
                     <p class="card-text">El Marina Bay Sands es un complejo de edificios de Singapur, localizado frente a Marina Bay y 
                         desarrollado por Las Vegas Sands que está considerado como el casino independiente más costoso del mundo.</p>
+                        <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reservar">Reservar</button>
+                    <button class="btn btn-primary btn-reservar" data-toggle="modal" data-target="#modal-reserva">Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -77,9 +75,10 @@
                     <h4 class="card-title">Mandarin Oriental</h4>
                     <h5 class="card-subtitle text-muted">Nueva York</h5>
                     <p class="card-text">Este hotel, ubicado en el piso 35 del prestigioso Times Warner Center en el Columbus Centre de Nueva York (EEUU).</p>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reservar">Reservar</button>
+                    <button class="btn btn-primary btn-reservar" data-toggle="modal" data-target="#modal-reserva">Reservar</button>
                 </div> 
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -88,9 +87,10 @@
                     <h4 class="card-title">Hotel de Glace</h4>
                     <h5 class="card-subtitle text-muted">Quebec</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta, metus et tristique cursus, turpis quam ornare nibh, vitae posuere sapien erat nec augue. Duis vel dolor eu dolor hendrerit pellentesque ut vel nibh.</p>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reservar">Reservar</button>
+                    <button class="btn btn-primary btn-reservar" data-toggle="modal" data-target="#modal-reserva">Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -99,9 +99,10 @@
                     <h4 class="card-title">Hotel Sheraton</h4>
                     <h5 class="card-subtitle text-muted">Mar del Plata</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta, metus et tristique cursus, turpis quam ornare nibh, vitae posuere sapien erat nec augue. Duis vel dolor eu dolor hendrerit pellentesque ut vel nibh.</p>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reservar">Reservar</button>
+                    <button class="btn btn-primary btn-reservar" data-toggle="modal" data-target="#modal-reserva">Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -110,9 +111,92 @@
                     <h4 class="card-title">The Atlantis</h4>
                     <h5 class="card-subtitle text-muted">Bahamas</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta, metus et tristique cursus, turpis quam ornare nibh, vitae posuere sapien erat nec augue. Duis vel dolor eu dolor hendrerit pellentesque ut vel nibh.</p>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reservar">Reservar</button>
+                    <button class="btn btn-primary btn-reservar" data-toggle="modal" data-target="#modal-reserva">Reservar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contactoModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactoModalLabel">Contacto con el hotel</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Su email:</label>
+                                <input type="email" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Su mensaje:</label>
+                                <textarea class="form-control" id="message-text" rows="5"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-reserva" tabindex="-1" role="dialog" aria-labelledby="reservaModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactoModalLabel">Formulario de reserva</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="recipient-nombre" class="col-form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="recipient-nombre">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="recipient-apellido" class="col-form-label">Apellido:</label>
+                                    <input type="text" class="form-control" id="recipient-apellido">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="tipo-habitacion" class="col-form-label">Tipo habitacion:</label>
+                                    <select id="tipo-habitacion" class="form-control">
+                                        <option value="doble estandar">Doble estandar</option>
+                                        <option value="doble superior">Doble superior</option>
+                                        <option value="suit junior">Suit Junior</option>
+                                        <option value="suit presidencial">Suit Presidencial</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="cant-habitacion" class="col-form-label">Cant. de habitaciones:</label>
+                                    <select id="cant-habitacion" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comentarios-text" class="col-form-label">Comentarios:</label>
+                                <textarea class="form-control" id="comentarios-text" rows="5"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
