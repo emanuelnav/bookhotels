@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Guia de Hoteles</title>
+    <title>Luxus | Contacto</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
@@ -29,7 +29,7 @@
         
     </nav>
     <div class="jumbotron">
-        <h1>Hoteles</h1>
+        <h1>Guia de Hoteles</h1>
     </div>
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -38,6 +38,52 @@
                 <li class="breadcrumb-item active"aria-current="page">Contacto</li>
             </ol>
         </nav>
+
+        <div class="faq">
+            <h3>Preguntas Frecuentes</h3>
+            <br />
+            <div class="accordion" id="accordionFaq">
+                <div class="card">
+                    <div class="card-header" id="faqOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">¿Como funciona?</button>
+                        </h5>
+                    </div>
+                    <div id="collapseFaqOne" class="collapse show" aria-labelledby="faqOne" data-parent="#accordionFaq">
+                        <div class="card-body">
+                            Eleji los hoteles de acuerdo a tu preferencia.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="faqTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFaqTwo" aria-expanded="true" aria-controls="collapseFaqTwo">¿Donde puedo reservar?</button>
+                        </h5>
+                    </div>
+                    <div id="collapseFaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordionFaq">
+                        <div class="card-body">
+                            Elegi la ciudad que te interese y luego realiza la reserva con tus datos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="faqThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFaqThree" aria-expanded="true" aria-controls="collapseFaqThree">¿Como realizo el pago?</button>
+                        </h5>
+                    </div>
+                    <div id="collapseFaqThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordionFaq">
+                        <div class="card-body">
+                            Utiliza el metodo de pago que mas te guste
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h2>Tenes alguna duda o consulta? Dejanos tus comentarios.</h2>
         <form>
             <div class="form-row">
@@ -53,6 +99,7 @@
             <div class="form-group">
                 <label for="email">Correo Electronico</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingrese su correo...">
+                <span class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="Ayuda"></span>
             </div>
             <div class="form-row">
                 <div class="form-group col-sm-9">
@@ -112,7 +159,12 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="node_modules/popper.js/dist/popper.min.js" ></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function (){
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
   </body>
 </html>
