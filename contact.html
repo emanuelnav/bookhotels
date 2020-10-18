@@ -99,6 +99,7 @@
             <div class="form-group">
                 <label for="email">Correo Electronico</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingrese su correo...">
+                <span class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="Ayuda"></span>
             </div>
             <div class="form-row">
                 <div class="form-group col-sm-9">
@@ -158,7 +159,12 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="node_modules/popper.js/dist/popper.min.js" ></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function (){
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
   </body>
 </html>
