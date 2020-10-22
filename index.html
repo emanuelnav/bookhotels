@@ -149,7 +149,7 @@
                     <h4 class="card-title">The Atlantis</h4>
                     <h5 class="card-subtitle text-muted">Bahamas</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta, metus et tristique cursus, turpis quam ornare nibh, vitae posuere sapien erat nec augue. Duis vel dolor eu dolor hendrerit pellentesque ut vel nibh.</p>
-                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reservar" data-toggle="modal" data-target="#modal-reserva">Reservar</button>
@@ -272,7 +272,17 @@
         $(function (){
             $("[data-toggle='tooltip']").tooltip();
             $("[data-toggle='popover']").popover();
+
+            $('#contacto').on('show.bs.modal', function (e) {
+               $('#contactoBtn').removeClass('btn-outline-success');
+               $('#contactoBtn').addClass('btn-success');
+               $('#contactoBtn').prop('disabled', true);
+            });
+            $('#contacto').on('hidden.bs.modal', function (e) {
+                $('#contactoBtn').prop('disabled', false);
+            });
         });
+
     </script>
   </body>
 </html>
