@@ -1,0 +1,46 @@
+    $skyblue: #61a6b3;
+
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+
+.jumbotron {
+    background-color: $skyblue;
+    color: black;
+    @include margenes(50px, 15px);
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: $skyblue;
+    @include margenes(20px, 0px);
+}
+
+.card-hotel {
+    flex: 1 300px;
+    @include margenes(10px, 0px);
+}
+
+.btn-reservar {
+    width: 100%;
+    border-radius: 0%;
+
+}
+
+.footer-address-icon {
+    padding-right: 5px;
+}
+
+.faq {
+    @include margenes(20px, 20px);
+}
+
+.img-hoteles {
+    height: 250px;
+}
+
+.slogan {
+    text-align: center;
+}
